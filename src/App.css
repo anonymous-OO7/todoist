@@ -1,38 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+
+
+
+body{
+  background-color:bisque;
+  font-family: poppins;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header{
+  color:azure;
+  border-bottom: solid 4px peru;
+  background-color: darkslategray;
+  box-shadow: 0 1px 2px goldenrod;
+  height: 3rem;
+  width: 100%;
+}
+
+.header nav{
+  height: 100%;
+  max-width: 922px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: auto;
 }
 
-.App-link {
-  color: #61dafb;
+.content{
+  display: flex;
+  max-width: 922px;
+  margin: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sidebar{
+  user-select: none;
+  width:260px;
+  height: 100vh;
+  padding-top: 74px;
+  border-right: 3px solid blue;
+}
+
+.sidebar div{
+  margin-bottom: 20px;
+  cursor: pointer;
+  padding: 15px;
+
+  
+ 
+}
+
+ .active{
+  background-color:cyan;
+
+}
+
+.task{
+  background-color:darkgray ;
+  height: 100vh;
+  width: 490px;
+}
+.add-class-btn{
+
+  cursor: pointer;
+}
+.plus{
+  color: crimson;
+  font-size: 18px;
+}
+
+.add-task-text{
+  color: blueviolet;
+  font-size: 14px;
+  margin-left: 20px;
+}
+
+.add-task-dialog{
+  margin-top: 10px;
+
+}
+.add-task-dialog input{
+  width: 100%;
+  border: 1px solid green;
+  background-color: cornflowerblue;
+  border-radius: 10px;
+  height: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
